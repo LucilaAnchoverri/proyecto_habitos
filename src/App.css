@@ -1,0 +1,126 @@
+/*Generales:Van en archivos como index.css o App.css. 
+Estilos por componente: Cada componente tiene su propio archivo CSS.*/ 
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: merryweather;
+}
+
+body{
+  display: flexbox;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f4e1e0, #ffe4ec, #f8d7e5);
+
+}
+
+h1{
+  color: black;
+  text-align: center;
+  font-size: 50px;  
+}
+
+.new_habit{
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+ 
+
+}
+
+.input_habit{
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+button{
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(163, 29, 60);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(163, 29, 60);
+}
+
+.toDo_doneHabits{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0;
+  color: white;
+}
+
+.toDo_doneHabits ul {
+  width: 400px;
+  max-width: 90%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.habit_list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  background: rgb(201, 128, 156);
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+h3{
+  margin-top: 35px;
+  color: black;
+  text-align: center;
+}
+
+.circle_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.svg_tag{
+  width: 250px;
+  height: 250px;
+}
+
+.circle {
+  fill: none;
+  stroke: rgb(163, 29, 60);
+  stroke-width: 20px;
+  transform-origin: 50%;
+  transform: rotate(-90deg); /* para que arranque arriba */
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.circle_bg {
+  fill: none;
+  stroke: lightgray;
+  stroke-width: 20px;
+}
+
+.circle_text {
+  font-size: 32px;
+  font-weight: bold;
+  fill: rgb(163, 29, 60);
+}
+
+
